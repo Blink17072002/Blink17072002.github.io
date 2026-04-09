@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_queries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Joshua Adeyemo</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Joshua Adeyemo</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/portfolio picture.jpeg" alt="John Doe Profile pic" srcset="">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Joshua Adeyemo</h1>
+            <p class="section__text__p2">A Backend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./resume.pdf', '_blank')">Download
+                    CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="window.open('https://www.linkedin.com/in/joshua-adeyemo', '_blank')">
+                <img src="./assets/github.png" alt="My Github profile" class="icon"
+                    onclick="window.open('https://github.com/Blink17072002', '_blank')">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <!-- ABOUT PICTURE — uncomment to restore the photo beside the cards
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/portfolio picture.jpeg" alt="Profile picture" class="about-pic">
+            </div>
+        -->
+        <div class="section-container about-centered">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <!-- EXPERIENCE CARD — uncomment when you have experience to show
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>2+ years <br> Backend Development</p>
+                    </div>
+                    -->
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Focus icon" class="icon">
+                        <h3>Focus</h3>
+                        <p>Backend Development <br> &amp; APIs</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.Sc. Electrical and Electronics Engineering</p>
+                    </div>
+                </div>
+
+                <!-- ORIGINAL PLACEHOLDER TEXT — uncomment to restore
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum ipsum velit in ab sed mollitia,
+                        exercitationem quis earum. Possimus soluta molestias officia obcaecati ipsum quia optio
+                        voluptatum recusandae in officiis.</p>
+                </div>
+                -->
+                <div class="text-container">
+                    <p>I'm a passionate and driven developer with a strong interest in building clean, efficient backend
+                        systems and APIs. I enjoy solving real-world problems through coding and I'm constantly growing
+                        my
+                        skills to create meaningful, impactful software.</p>
+                </div>
+            </div>
+        </div>
+
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Django</h3>
+                                <p>Proficient</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Django REST Framework</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>NodeJS & Express</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <!-- 
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                         
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+-->
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+
+        </div>
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container"><img src="./assets/slackbot.png" alt="Slackbot Automator"
+                            class="project-img"></div>
+                    <h2 class="experience-sub-title project-title">Slackbot Automator</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Blink17072002/slack-bot-automator', '_blank')">Github</button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://youtube.com/watch?v=zWADVuWoWws&feature=youtu.be', '_blank')">Demo</button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://daily-news-bot-admin.onrender.com/', '_blank')">Live</button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container"><img src="./assets/inventory_api.png" alt="Inventory Management API"
+                            class="project-img"></div>
+                    <h2 class="experience-sub-title project-title">Inventory Management API</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Blink17072002/Inventory_management_API', '_blank')">Github</button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://www.youtube.com/watch?v=9EfJDiE6nEQ', '_blank')">Demo</button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://inventory-management-api-six.vercel.app/', '_blank')">Live</button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container"><img src="./assets/studybuddy.png" alt="Study Bud"
+                            class="project-img"></div>
+                    <h2 class="experience-sub-title project-title">Study Buddy</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Blink17072002/studybud-django-website', '_blank')">Github</button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://youtu.be/QpShTTFMYN8', '_blank')">Demo</button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://studybud125.pythonanywhere.com/', '_blank')">Live</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:adeyemojoshua17@gmail.com" target="_blank">adeyemojoshua17@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/joshua-adeyemo" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2026 Joshua Adeyemo. All Rights Reserved</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
